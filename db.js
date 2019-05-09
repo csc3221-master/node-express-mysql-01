@@ -3,7 +3,7 @@ var pool;
 
 exports.connect = function ConnectionHandler(done){
 	pool = mysql.createPool({
-		host: "localhost',
+		host: "localhost",
 		user: "dbuser",
 		password: "csc3221!",
 		database: "employees"

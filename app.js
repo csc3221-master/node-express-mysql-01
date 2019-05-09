@@ -6,7 +6,7 @@ var router = express.Router();
 
 
 router.get('/', function ServerGetRootRequest(request, response) {
-	db.connect(function ConnectToDatabase(){
+	db.connect(function ConnectToDatabase(err){
 		if (err){
 			console.log("Unable to Connect to MySQL");
 			process.exit(1); //Possibly need to send error page to client
